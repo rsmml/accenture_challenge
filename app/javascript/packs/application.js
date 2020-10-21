@@ -31,4 +31,45 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+
+
+  let controller = new ScrollMagic.Controller();
+
+  let timeline = new TimelineMax();
+  timeline
+  .from('.banana_img', 6, {
+    y: 0,
+    x: 2000,
+    ease: Power3.easeInOut
+  }, '-=4')
+  .from('.title', 6, {
+    y: 0,
+    x: -2000,
+    ease: Power3.easeInOut
+  }, '-=4')
+
+  let scene = new ScrollMagic.Scene({
+    triggerElement:  '.banana',
+    duration: 1500,
+    triggerHook: 0,
+  })
+  .setTween(timeline)
+  .setPin('.banana')
+  .addTo(controller);
+
+  // Text Subtitle Animation
+  const textSubTitle = document.querySelector('.subtitle')
+  const subtitle = TweenMax.fromTo(textSubTitle, 4, { opacity: 0 }, { opacity: 1 } );
+
+  let scene2 = new ScrollMagic.Scene({
+    triggerElement:  '.banana',
+    duration: 400,
+    triggerHook: 0,
+    offset: '1500',
+  })
+  .setTween(subtitle)
+  .setPin('.banana')
+  .addTo(controller);
+
+
 });
