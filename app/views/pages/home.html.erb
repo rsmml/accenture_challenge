@@ -1,35 +1,37 @@
-<header>
-  <nav class="navbar" style="background-color: rgba(0,0,0,0.8);">
-    <div class="logo-navbar">
-      <%= image_tag "mini-logo.png", alt: "alttext", :class => 'mini_logo_img' %>
-    </div>
-    <div class="nav-bar-elements">
-      <ul>
-        <li><a data-page="banner" href="#">Home</a></li>
-        <li><a data-page="about" href="#">About Accenture</a></li>
-        <li><a data-page="contact" href="#">Contact</a></li>
-        <div class="nav-element-wrapper"></div>
-      </ul>
-    </div>
-  </nav>
-</header>
+<div class="margin60" style="background-color: black">
+  <header>
+    <nav class="navbar" style="background-color: rgba(0,0,0,0.8);">
+      <div class="logo-navbar">
+        <%= image_tag "mini-logo.png", alt: "alttext", :class => 'mini_logo_img' %>
+      </div>
+      <div class="nav-bar-elements">
+        <ul>
+          <li><a data-page="banner" href="#">Home</a></li>
+          <li><a data-page="about" href="#">About Accenture</a></li>
+          <li><a data-page="contact" href="#">Contact</a></li>
+          <div class="nav-element-wrapper"></div>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-<section data-index='0' class="banner" style="height: 100vh;">
-  <h1 class="title" style="color: white;">accenture</h1>
-  <h4 class="subtitle" style="color: white;">{ Let there be a <strong>change</strong> .}</h4>
-  <%= image_tag "logo.png", alt: "alttext", :class => 'logo_img' %>
+  <section data-index='0' class="banner" style="height: 100vh;">
+    <h1 class="title" style="color: white;">accenture</h1>
+    <h4 class="subtitle" style="color: white;">{ Let there be a <strong>change</strong> .}</h4>
+    <%= image_tag "logo.png", alt: "alttext", :class => 'logo_img' %>
 
-  <aside class="mouse">
-    <div class="help-mouse-down">
-      <i class="help-mouse-wheel"></i>
-    </div>
-    <span class="help-down"></span>
-  </aside>
-</section>
+    <aside class="mouse">
+      <div class="help-mouse-down">
+        <i class="help-mouse-wheel"></i>
+      </div>
+      <span class="help-down"></span>
+    </aside>
+  </section>
 
-<section data-index='0' class="about">
-  <h1 style="color: white; height: 100vh">Some Data</h1>
-</section>
+  <section data-index='0' class="about">
+    <h1 style="color: white; height: 100vh">Some Data</h1>
+  </section>
+</div>
 
 <section data-index='0' class="contact">
   <footer class="footer">
