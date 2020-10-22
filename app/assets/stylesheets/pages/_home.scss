@@ -7,6 +7,12 @@
   flex-direction: column;
   text-align: center;
   position: relative;
+  p{
+    color: white;
+    position: absolute;
+    bottom: 40px;
+    left: -8px;
+  }
 }
 
 .banner img{
