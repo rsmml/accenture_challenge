@@ -1,7 +1,7 @@
 <header>
   <nav class="navbar" style="background-color: rgba(0,0,0,0.8);">
     <div class="logo-navbar">
-      <%= image_tag "logo.png", alt: "alttext", :class => 'mini_logo_img' %>
+      <%= image_tag "mini-logo.png", alt: "alttext", :class => 'mini_logo_img' %>
     </div>
     <div class="nav-bar-elements">
       <ul>
@@ -32,5 +32,7 @@
 </section>
 
 <section data-index='0' class="contact">
-  <h1 style="color: white; height: 100vh">More Data</h1>
+  <footer class="footer">
+    <%= render "shared/footer" %>
+  </footer>
 </section>
