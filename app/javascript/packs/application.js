@@ -38,11 +38,4 @@ document.addEventListener('turbolinks:load', () => {
   bannerAnimation();
   mouseAnimation();
   navBarAnimation();
-
-  // const contact = document.querySelector('#contact-us');
-  // const circle = document.querySelector('.contact-circle');
-
-  // contact.addEventListener('mouseover', () => {
-  //   circle.style.width = '100px';
-  // })
 });
